@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pokemones seleccionados</title>
+</head>
+<body>
+    
+    <h1 class="title">Pokemones seleccionados</h1>
+    <div class="pokemon-container"></div>
+
+    <script>
+        const Pseleccionados = document.querySelector('.pokemon-container');
+
+        pS = JSON.parse(localStorage.getItem("pokemonS"))
+        console.log(localStorage.getItem("pokemonS"));
+
+        for (let i = 0; i < Object.keys(pS).length; i++){
+            poke = pS[i];
+            createPokemon(poke);
+            console.log(poke);
+        }
+
+        function createPokemon(poke){
+            const card = document.createElement('div');
+            card.classList.add('pokemon-block');
+
+            const number = document.createElement('p');
+            number.textContent = `Id: ${poke.idA}`;
+
+            const name = document.createElement('p');
+            name.classList.add('name');
+            name.textContent = poke.nameA;
+
+            const img = document.createElement('img');
+            img.src = poke.imgA;
+            const imgContainer = document.createElement('div');
+            imgContainer.appendChild(img);
+
+            const peso = document.createElement('p');
+            peso.textContent = `Peso: ${poke.pesoA}`;
+
+            const altura = document.createElement('p');
+            altura.textContent = `Altura: ${poke.alturaA}`;
+
+            card.appendChild(name);
+            card.appendChild(imgContainer);
+            card.appendChild(number);
+            card.appendChild(peso);
+            card.appendChild(altura);
+
+            Pseleccionados.appendChild(card);
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    background: rgb(226, 226, 210);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
+    
+  }
+  
+  h1 {
+    color: rgb(214, 228, 22);
+    -webkit-text-stroke: 3px rgb(36, 36, 196);
+    font-size: 4rem;
+  }
+  
+  .pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color:white;
+  }
+  
+  .pokemon-block{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(28, 28, 146);
+    box-shadow: 0 3px 15px rgba(0, 2, 97, 0.5);
+    cursor: pointer;
+  }
+  
+  .name {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(214, 228, 22);
+  }
+
+  .pokemon-popup{
+    display: none;
+    border-radius: 10px;
+    position: fixed;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+    height: 80%;
+    background-color: rgb(15, 9, 105);
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    
+  }
+
+  .pokemon-popup button {
+    float: right;
+    background-color: rgb(1, 1, 73);
+    color: rgb(214, 228, 22);
+    width: 35px;
+    height: 35px;
+    border: 0;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  }
+
+  .nombre-popup {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(214, 228, 22);
+  }
+
+  .img-popup{
+    background-image: url(./blob.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    height: 40%;
+  }
+
+  .btn-vista2{
+    border-radius: 10px;
+    border-color: rgb(36, 36, 196);
+    padding: 10px;
+    background-color: rgb(214, 228, 22);
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(15, 9, 105);
+  }

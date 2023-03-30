@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pokémon</title>
+</head>
+<body>
+    <h1 class="title">Pokémon</h1>
+
+    <a href="./Vista2.html" target="_blank">
+        <button class="btn-vista2">Ver Pokemones seleccionados</button>
+    </a>
+
+    <div class="pokemon-container"> <!-- Los pokemones se agregan dinámicamente --></div>
+   
+    <div class="pokemon-popup" style="display: none;">
+        <button class="close-popup">X</button>
+        <div class="popup-contenido">
+            <p class="nombre-popup"></p>
+            <div class="img-container-popup">
+                <img class="img-popup">
+            </div>
+            <p class="id-popup"></p>
+            <p class="peso-popup"></p>
+            <p class="altura-popup"></p>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+   
+</body>
+</html>
